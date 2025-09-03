@@ -22,17 +22,17 @@ function Attribution() {
         <span>
           Coded by
           <a
-            href="https://twitter.com/CodeWithAlamin"
+            href="https://twitter.com/AliceCodes"
             target="_blank"
             rel="noreferrer"
           >
-            Alamin,
+            Odunayo,
           </a>
         </span>
         <span>
           Challenge by
           <a
-            href="https://www.frontendmentor.io/profile/CodeWithAlamin"
+            href="https://www.frontendmentor.io/profile/OdunayoAmoye"
             target="_blank"
             rel="noreferrer"
           >
