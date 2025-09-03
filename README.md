@@ -6,38 +6,11 @@
   <h2>Space Tourism</h2>
 
   <h3>
-    <a href="https://space-tourism-alamin.vercel.app">
+    <a href="https://space-tourism-Odunayo.vercel.app">
       <strong>View Demo</strong>
     </a> 
     || 
-    <a href="https://www.frontendmentor.io/solutions/space-tourism-website-w-reactjs-GbYaAoC2Nc">
-      <strong>Frontend Mentor</strong>
-    </a>
   </h3>
-
-  <div align="center">
-    <a href="https://github.com/CodeWithAlamin/Space-Tourism-website/issues">Report Bug</a>
-    •
-    <a href="https://github.com/CodeWithAlamin/Space-Tourism-website/pulls">Request Feature</a>
-  </div>
-
-  <hr>
-
-</div>
-
-<!-- Badges -->
-<div align="center">
-
-<!-- Status -->
-<img src="https://img.shields.io/badge/Status-Completed-success?style=flat" alt="Status" />
-
-<!-- Liceensee -->
-<img src="https://img.shields.io/badge/License-MIT-blue?style=flat" alt="License" />
-
-<a href='https://www.twitter.com/CodeWithAlamin' target="_blank"><img alt='Twitter' src='https://img.shields.io/badge/@CodeWithAlamin-100000?style=for-the-badge&logo=Twitter&logoColor=00C9F7&labelColor=3F3F3F&color=0092FA'/></a>
-<a href='https://www.linkedin.com/in/CodeWithAlamin' target="_blank"><img alt='LinkedIn' src='https://img.shields.io/badge/@CodeWithAlamin-100000?style=for-the-badge&logo=LinkedIn&logoColor=00a0dc&labelColor=2F2F2F&color=0077b5'/></a>
-
-</div>
 
 <!-- Brief -->
 <p align="center">
@@ -45,7 +18,7 @@ A multi-page space tourism website — discover destinations, meet the crew, and
 </p>
 
 <!-- Screenshot -->
-<a align="center" href="https://space-tourism-alamin.vercel.app">
+<a align="center" href="https://space-tourism-Odunayo.vercel.app">
 
 ![Screenshot](./public/thumbnail-preview.jpg)
 
@@ -61,20 +34,17 @@ A multi-page space tourism website — discover destinations, meet the crew, and
 - [Installation](#installation)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-- [License](#license)
 
 ## Key Features🎉
 
 Users should be able to:
-
-- View each page and be able to toggle between the tabs to see new information
-- View the optimal layout for each of the website's pages depending on their device's screen size
-- See hover states for all interactive elements on the page
+- View multiple pages (Home, Destination, Crew, Technology)
+- Responsive design across devices (mobile, tablet, desktop)
+- Tabbed navigation for interactive content
+- Smooth transitions and animations with Framer Motion
 
 ## Links
-
-- View Demo - https://space-tourism-alamin.vercel.app
-- Solution page - [https://www.frontendmentor.io/solutions/...](https://www.frontendmentor.io/solutions/space-tourism-website-w-reactjs-GbYaAoC2Nc)
+- View Demo - https://space-tourism-Odunayo.vercel.app
 
 ## My process🛠️
 
@@ -87,11 +57,16 @@ Users should be able to:
 
 ### What I Learned💡
 
-During the development of the Space Tourism Website, I encountered several challenges and gained valuable insights into various aspects of web development. Here are some of the key learnings:
+While working on the Space Tourism Website, I faced several challenges that helped me grow as a developer. The process allowed me to deepen my understanding of different web development concepts and improve my problem-solving skills. Some of my key takeaways include:
 
-#### Dynamic Backgrounds with React Router and Styled Components
+#### Handling Dynamic Backgrounds with React Router and Styled Components
 
-One of the challenges I faced was dynamically changing the background image based on the page the user navigates to. I wanted to provide a visually appealing experience by adjusting the background according to each page. Here's how I tackled this challenge:
+One of the tricky parts was ensuring each page had the right background image depending on where the user was. I solved this by combining React Router’s useLocation hook with styled-components. By passing the current route as a prop, I was able to switch between mobile, tablet, and desktop background images dynamically. This taught me how to make designs more adaptive and maintainable.
+Improving Navigation with Conditional Redirects
+
+###  Improving Navigation with Conditional Redirects
+I also learned how to handle navigation issues with React Router. For example, when a user landed on the /crew route without choosing a specific crew member, I set up a redirect so that it would automatically show the first available crew member. I also added a fallback for invalid names to display a custom 404 page. This experience showed me the importance of guiding users smoothly and preventing navigation dead-ends.
+
 
 ```css
 const StyledAppLayout = styled.div.withConfig({
@@ -112,10 +87,6 @@ const StyledAppLayout = styled.div.withConfig({
 
   // Additional styles...
 `;
-```
-
-I utilized React Router's `useLocation` hook to get the current location, extracted the page name, and passed it as a prop to my styled component. Leveraging `styled-components` allowed me to dynamically set background images based on the page, creating a seamless transition between pages.
-
 #### React Router and Conditional Redirects
 
 Implementing conditional redirects with React Router was crucial for ensuring a smooth user experience. For instance, when a user lands on the `/crew` route without specifying a particular crew member. To address this, I implemented conditional redirects using React Router. Here's a breakdown of the solution:
@@ -142,19 +113,13 @@ function CrewContents() {
     // ...
   );
 }
-```
-
-In this code snippet, I first check if `crewName` is not provided, and if so, I redirect the user to the first crew member's page. Additionally, if the specified crew member is not found in the dataset, a redirect to a custom NotFound page is implemented.
-
-This approach ensures a seamless user experience, providing default navigation when needed and gracefully handling scenarios where a crew member is not found.
 
 ## Installation📥
 
 - Clone this repo:
 
 ```sh
-git clone https://github.com/CodeWithAlamin/Space-Tourism-website.git
-```
+```git clone https://github.com/Alicedicey/Space-Tourism-website.git
 
 - Install dependencies:
 
@@ -176,23 +141,13 @@ npm run dev
 
 ## Author👤
 
-<b>Alamin</b>
+<b>Odunayo Amoye</b>
 
-- Twitter - [@CodeWithAlamin](https://www.twitter.com/CodeWithAlamin)
-- LinkedIn - [@CodeWithAlamin](https://www.linkedin.com/in/CodeWithAlamin)
-- Frontend Mentor - [@CodeWithAlamin](https://www.frontendmentor.io/profile/CodeWithAlamin)
-- Github: [@CodeWithAlamin](https://github.com/CodeWithAlamin)
-
-Feel free to contact me with any questions or feedback!
-
-## Star this project🌟
-
-Show your appreciation by starring this project on GitHub.🙂 Your support will motivate me to continue creating and sharing valuable open-source projects
+- Twitter - (https://www.twitter.com/Alicecodes)
+- LinkedIn - (https://www.linkedin.com/in/Odunayo Amoye)
+- Frontend Mentor -(https://www.frontendmentor.io/profile/Odunayo Amoye)
+- Github: (https://github.com/Alicedicey)
 
 ## Acknowledgments🙏
 
-I would like to express my gratitude to Frontend Mentor for providing the challenge and inspiration to build this project. Their platform and resources have been instrumental in my learning journey and the development of this project.
-
-## License📜
-
-This project is licensed under the [MIT](./LICENSE.md) License - see the LICENSE file for details.
+I would like to express my gratitude to Frontend Mentor for providing the challenge and inspiration to build this project. 
